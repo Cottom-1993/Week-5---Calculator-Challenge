@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
+* {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+font-family: 'roboto' , sans-serif;
+font-size: 3vw;
+background-color: rgb(40, 40, 41);
+  
   }
-}
+  
+  /* the below code is the calculator screen */
+  #answer {
+  
+  border: 5px solid grey;
+  color: black;
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  top: 100px;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  input [type="text"] {
+  height: 75px;
+  width: 250px;
+  background-color: aliceblue;
+
+  }
+
+  /* the below is targeting the numbers on the calculator */
+  #Numbers {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  flex-wrap: wrap;
+  width: 256px;
+  top: 30%;
+  left: 40%;
+  position: absolute;
+  margin: 0%;
+  padding: 1px;
+  text-align: center;
+  border: 10px solid black;
+  background: rgb(214, 214, 228);
+  border-radius: 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #Button {
+  
+  margin: 1%;
+  
   }
-}
+
+  /* the below is targeting the delete and = button */
+  #delButton{
+    margin: 10%
+
+  }
